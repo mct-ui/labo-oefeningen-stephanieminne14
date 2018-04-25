@@ -3,21 +3,21 @@
 \*------------------------------------*/
 
 @font-face {
-  font-family: "Clear sans";
+  font-family: "ClearSans";
   font-weight: 200;
   src: url("../fonts/ClearSans-Light-webfont.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Clear sans";
+  font-family: "ClearSans";
   font-weight: 400;
-  src: url("../fonts/ClearSans-Regular-webfont.woff") format("woff");
+  src: url("../fonts/ClearSans-Medium-webfont.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Clear sans";
+  font-family: "ClearSans";
   font-weight: 600;
-  src: url("../fonts/ClearSans-Medium-webfont.woff") format("woff");
+  src: url("../fonts/ClearSans-Regular-webfont.woff") format("woff");
 }
 
 /*------------------------------------*\
@@ -34,7 +34,7 @@ html {
   font-size: 18px;
   line-height: 32px;
   font-weight: 200;
-  font-family: "Clear Sans" Helvetica, arial, sans-serif;
+  font-family: "ClearSans", arial, sans-serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -458,6 +458,34 @@ a:visited, a:active, a:hover, a:focus {
   .c-nav__link {
     padding: 8px 16px;
   }
+}
+
+/* figcaption and figure */
+
+.c-image-figcaption {
+  position: relative;
+}
+
+.c-image-figcaption__image {
+  width: 100%;
+}
+
+.c-image-figcaption__figcaption {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: white;
+  border-right: 8px solid #0053FB;
+  width: 260px;
+  height: 64px;
+  color: black;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  font-weight: 400;
+  margin: 0;
 }
 
 /*
